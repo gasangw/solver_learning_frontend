@@ -1,9 +1,12 @@
 import './App.css';
+import NavBar from './component/navBar';
+import Home from './component/Home';
 
 function App() {
   return (
     <div className="App">
-      <h2>Solver Learning</h2>
+      <NavBar />
+      <Home />
     </div>
   );
 }
