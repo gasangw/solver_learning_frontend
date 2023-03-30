@@ -15,7 +15,7 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto text-black gap-5">
+          <Nav className="ml-auto text-black gap-5 text-lg">
             <NavLink to="/">Home</NavLink>
             <NavLink toh="about">About</NavLink>
             <NavLink to="stacks">Stacks</NavLink>
@@ -23,10 +23,10 @@ const NavBar = () => {
           </Nav>
           <Nav>
             <NavLink to="#deets">
-                <button className="py-2 px-3 rounded-4 border-2 mr-5 ml-5">Sign Up</button>
+                <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 mr-5 ml-5">Sign Up</button>
             </NavLink>
             <NavLink to="#memes">
-            <button className="py-2 px-3 rounded-4 border-2">Login</button>
+            <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 ">Login</button>
             </NavLink>
           </Nav>
         </Navbar.Collapse>

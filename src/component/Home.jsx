@@ -1,4 +1,5 @@
 import React from "react";
+import './styles.css'
 
 const Home = () => {
   return (
@@ -11,6 +12,10 @@ const Home = () => {
           to learning materials, progress tracking, and interactive features for
           collaborative learning.
         </p>
+        <div>
+            <button className="border-1 py-1 px-4 mr-5 text-white text-lg btn-1">View all Stacks</button>
+            <button className="border-1 py-1 px-4 text-white text-lg btn-2">Access all courses</button>
+        </div>
       </div>
       <div>
         <img src="" alt="pics" />
