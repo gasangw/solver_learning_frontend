@@ -1,0 +1,120 @@
+/* styling for home */
+.wrapper {
+    background-color: #E0F3F1;
+    color: #000000;
+    padding-bottom: 2rem;
+}
+
+.btn-1 {
+    background-color: hsl(170, 70%, 40%);
+}
+
+.btn-2 {
+   background-color: hsla(170, 70%, 40%, 0.603);
+}
+
+.wrapper2_holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.parag {
+  text-align: left;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+/* styling for the cards */
+.main-holder {
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    transform: translateY(-60px);
+  }
+  
+  .card-holder {
+    position : relative;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    padding : 1rem;  
+  }
+  
+  .card-holder .cards{
+    position: relative;
+    max-width : 12rem;
+    height : 10.4rem;  
+    background-color : #fff;
+    margin : 1.88rem 0.8rem;
+    padding : 1.25rem 0.9rem;
+    
+    display : flex;
+    flex-direction : column;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+  .card-holder .cards:hover {
+    height : 19rem;    
+  }
+  
+  .my-ima {
+    max-width: 100%;
+    height: 11rem;
+    width: 100%;
+  }
+  
+  .card-holder .cards .image {
+    position : relative;
+    width : 100%;
+    height : 16.3rem;
+    
+    top : -40%;
+    left: 8px;
+    box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+    z-index : 1;
+  }
+  
+  .card-holder .cards .image img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .card-holder .cards .content {
+    position : relative;
+    top : -8.75rem;
+    padding : 10px 15px;
+    color : #111;
+    text-align : center;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .card-holder .cards:hover .content {
+     margin-top : 1.9rem;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+
+  /* stylings for about */
+  .my-wrap {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+  }
+
+  .about-text {
+    line-height: 2rem;
+  }
+
