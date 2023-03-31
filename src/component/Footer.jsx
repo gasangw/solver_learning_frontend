@@ -42,16 +42,16 @@ const Footer = () => {
           </div>
           <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Category
+              <p className="font-semibold tracking-wide text-teal-accent-400 text-left">
+                About Us
               </p>
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 space-y-2 text-left">
                 <li>
                   <a
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    News
+                    Solver Learning Introduction
                   </a>
                 </li>
                 <li>
@@ -59,7 +59,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    World
+                    Solver Learning Mission
                   </a>
                 </li>
                 <li>
@@ -67,7 +67,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Games
+                    SL Services
                   </a>
                 </li>
                 <li>
@@ -75,22 +75,22 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    References
+                    Course Creation
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Cherry
+              <p className="font-semibold tracking-wide text-teal-accent-400 text-left">
+                Partners
               </p>
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 space-y-2 text-left">
                 <li>
                   <a
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Web
+                    Solvit Africa
                   </a>
                 </li>
                 <li>
@@ -98,7 +98,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    eCommerce
+                    GIZ
                   </a>
                 </li>
                 <li>
@@ -106,7 +106,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Business
+                    ICT Chamber
                   </a>
                 </li>
                 <li>
@@ -114,7 +114,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Entertainment
+                    Ministry of ICT
                   </a>
                 </li>
                 <li>
@@ -122,16 +122,16 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Portfolio
+                    Harambee
                   </a>
                 </li>
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
+              <p className="font-semibold tracking-wide text-teal-accent-400 text-left">
                 Apples
               </p>
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 space-y-2 text-left">
                 <li>
                   <a
                     href="/"
@@ -175,16 +175,16 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <p className="font-semibold tracking-wide text-teal-accent-400">
-                Business
+              <p className="font-semibold tracking-wide text-teal-accent-400 text-left">
+                Contacts
               </p>
-              <ul className="mt-2 space-y-2">
+              <ul className="mt-2 space-y-2 text-left">
                 <li>
                   <a
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Infopreneur
+                    Kigali Rwanda
                   </a>
                 </li>
                 <li>
@@ -192,7 +192,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Personal
+                    Kimihurura
                   </a>
                 </li>
                 <li>
@@ -200,7 +200,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Wiki
+                    Tel: +9986542148
                   </a>
                 </li>
                 <li>
@@ -208,7 +208,7 @@ const Footer = () => {
                     href="/"
                     className="transition-colors duration-300 text-deep-purple-50 hover:text-teal-accent-400"
                   >
-                    Forum
+                    Email:solverlearning@rw.com
                   </a>
                 </li>
               </ul>

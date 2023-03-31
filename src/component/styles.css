@@ -1,6 +1,8 @@
+/* styling for home */
 .wrapper {
     background-color: #E0F3F1;
     color: #000000;
+    padding-bottom: 2rem;
 }
 
 .btn-1 {
@@ -11,12 +13,26 @@
    background-color: hsla(170, 70%, 40%, 0.603);
 }
 
+.wrapper2_holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5.5rem;
+  align-items: center;
+  gap: 1rem;
+}
+
+.parag {
+  text-align: left;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
 /* styling for the cards */
 .main-holder {
     display : flex;
     align-items : center;
     justify-content : center;
-    height: 100vh; 
+    transform: translateY(-60px);
   }
   
   .card-holder {
@@ -29,7 +45,7 @@
   
   .card-holder .cards{
     position: relative;
-    max-width : 15rem;
+    max-width : 12rem;
     height : 10.4rem;  
     background-color : #fff;
     margin : 1.88rem 0.8rem;
@@ -86,3 +102,19 @@
      transition-delay: 0.2s;
     
   }
+
+  /* stylings for about */
+  .my-wrap {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-heading {
+    font-size: 2.5rem;
+  }
+
+  .about-text {
+    line-height: 2rem;
+  }
+

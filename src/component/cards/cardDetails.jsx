@@ -1,8 +1,8 @@
 import reacto from '../img/react.png'
 import Nod from '../img/node.png'
-import ux from '../img/ux.jpg'
-import djan from '../img/django.png'
-import lara from '../img/lara.png'
+import ux from '../img/ux.jpg';
+import djan from '../img/django.png';
+import lara from '../img/lara.png';
 
 const CardDetails = [
     {

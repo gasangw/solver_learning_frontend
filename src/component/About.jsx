@@ -1,12 +1,13 @@
 import React from "react";
+import about from './img/about.png'
 
 const About = () => {
   return (
-    <div>
+    <div className="about-wrapper px-20 my-wrap">
       <div>
-        <p>About Us</p>
-        <h3>We Equip, Train and Outsource</h3>
-        <p>
+        <p className="text-xl text-left p-2 text-green-600 font-semibold">About Us</p>
+        <h3 className="font-bold text-left about-heading">We provide best resources to develop your skill</h3>
+        <p className="text-lg py-3 text-left about-text">
           Solver Learning is an innovative e-learning website designed to
           support Solvit Africa students in accessing their learning materials
           and staying on top of their coursework. With a user-friendly
@@ -23,7 +24,7 @@ const About = () => {
         </p>
       </div>
       <div>
-        <img src="" alt="" />
+        <img src={about} alt="cartoons" className="cartoon-students"/>
       </div>
     </div>
   );
