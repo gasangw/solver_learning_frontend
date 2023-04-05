@@ -14,7 +14,7 @@ const Home = () => {
             access to learning materials, progress tracking, and interactive
             features for collaborative learning.
           </p>
-          <div className="text-left py-10">
+          <div className="text-left py-10 flex">
             <button className="border-1 py-2 px-6 mr-5 text-white text-lg btn-1">
               View all Stacks
             </button>
