@@ -5,9 +5,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
+
 const NavBar = () => {
   return (
-    <div>
+    <div className="">
       <Navbar collapseOnSelect expand="lg" bg="light" variant="dark" className="">
       <Container>
         <Navbar.Brand href="#home">
@@ -15,18 +16,19 @@ const NavBar = () => {
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto text-black gap-5 text-lg">
+          <Nav className="ml-auto text-black gap-5 text-lg ">
             <NavLink to="/">Home</NavLink>
-            <NavLink toh="about">About</NavLink>
+            <NavLink to="about">About</NavLink>
             <NavLink to="stacks">Stacks</NavLink>
             <NavLink to="contact">Contact</NavLink>
-          </Nav>
+          </Nav> 
+
           <Nav>
-            <NavLink to="#deets">
-                <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 mr-5 ml-5">Sign Up</button>
+            <NavLink to="SignUp">
+            <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 ">SignUp</button>
             </NavLink>
-            <NavLink to="#memes">
-            <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 ">Login</button>
+            <NavLink to="login">
+            <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 ">login</button>
             </NavLink>
           </Nav>
         </Navbar.Collapse>
