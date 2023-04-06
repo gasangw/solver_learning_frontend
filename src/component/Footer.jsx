@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../component/img/dark.png";
+import logo from "../component/img/Logo.png";
 
 const Footer = () => {
   return (
@@ -24,16 +24,13 @@ const Footer = () => {
               className="inline-flex items-center"
             >
               <img src={logo} alt="logo" className="h-24" />
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Solver Learning
-              </span>
             </a>
             <div className="mt-4 lg:max-w-sm">
-              <p className="text-sm text-deep-purple-50">
+              <p className="text-sm text-deep-purple-50 text-left">
                 With the ability to access educational resources anytime, anywhere, learners have more
                 flexibility and control over their learning experience
               </p>
-              <p className="mt-4 text-sm text-deep-purple-50">
+              <p className="mt-4 text-sm text-deep-purple-50 text-left">
                 E-learning is poised to become even more
                 popular, providing learners with new and exciting ways to
                 enhance their knowledge and expertise.

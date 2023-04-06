@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import student from "./img/student.png";
+import GIZ from './img/GIZ.jpg'
 
 const Home = () => {
   return (
@@ -15,16 +15,16 @@ const Home = () => {
             features for collaborative learning.
           </p>
           <div className="text-left py-10">
-            <button className="border-1 py-2 px-6 mr-5 text-white text-lg btn-1">
+            <button className="border-1 rounded-full py-2 px-6 mr-5 text-white text-lg btn-1">
               View all Stacks
             </button>
-            <button className="border-1 py-2 px-6 text-white text-lg btn-2">
+            <button className="border-1 rounded-full py-2 px-6 text-white text-lg btn-2">
               Access all courses
             </button>
           </div>
         </div>
-        <div className="px-15">
-          <img src={student} alt="student-reading" className="ml-auto stud" />
+        <div className="px-15 student">
+          <img src={GIZ} alt="student-reading" className="ml-auto stud rounded-full" />
         </div>
       </div>
     </div>

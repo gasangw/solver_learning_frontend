@@ -1,6 +1,6 @@
 import reacto from '../img/react.png'
 import Nod from '../img/node.png'
-import ux from '../img/ux.jpg';
+import ux from '../img/ui-ux.png';
 import djan from '../img/django.png';
 import lara from '../img/lara.png';
 
