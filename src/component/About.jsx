@@ -1,6 +1,7 @@
 import React from "react";
 import about from './img/about.png'
 
+
 const About = () => {
   return (
     <div className="about-wrapper px-20 my-wrap">

@@ -21,7 +21,7 @@ const Footer = () => {
               href="/"
               aria-label="Go home"
               title="Company"
-              className="inline-flex items-center"
+              className="flex"
             >
               <img src={logo} alt="logo" className="h-24" />
             </a>
@@ -212,11 +212,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
+        <div className="flex flex-col justify-between pt-4 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
           <p className="text-sm text-gray-100">
             © Copyright 2023 Solver learning. All rights reserved.
           </p>
-          <div className="flex items-center mt-4 space-x-4 sm:mt-0">
+          <div className="flex items-center mt-1 space-x-4 sm:mt-0">
             <a
               href="/"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
