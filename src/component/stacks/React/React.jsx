@@ -1,19 +1,16 @@
 import React from "react";
 import "../stacks.css";
 import "./react.css"
-import { BsArrowLeft } from "react-icons/bs";
 import { GoArrowRight } from 'react-icons/go';
 
 const AboutReact = () => {
   return (
     <section>
-      <button className="flex align-baseline mt-2 ml-2 py-2 px-3 rounded-md border border-green-600">
-        <BsArrowLeft className="mt-1 mr-2" /> Back
-      </button>
       <p className="font-bold text-xl text-center">Over View Of React</p>
       <div className="sidebar-sec">
         <aside class="flex flex-col w-64 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
           <div class="flex flex-col items-center mt-6 -mx-2">
+            <h2 className="text-xl mb-3 font-semibold">Instructor</h2>
             <img
               class="object-cover w-24 h-24 mx-2 rounded-full"
               src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
@@ -29,42 +26,73 @@ const AboutReact = () => {
           <hr class="mt-4"/>
           <div class="flex flex-col justify-between flex-1 mt-6">
             <nav>
-              <div class="sec-center"> 	
-                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
-                <label class="for-dropdown" for="dropdown">Module 1: HTML/CSS<i class="uil uil-arrow-down"></i></label>
-                <div class="section-dropdown"> 
-                  <a href="#">Lesson 1: Day 1 <i class="uil uil-arrow-right"></i></a>
-                  <a href="#">Lesson 3: Day 3<i class="uil uil-arrow-right"></i></a>
-                  <a href="#">Lession 4: Day 5<i class="uil uil-arrow-right"></i></a>
-                  <a href="#">Assessment: Day 5<i class="uil uil-arrow-right"></i></a>
-                </div>
-              </div>
+            <details>
+              <summary>Module 1: HTML/CSS</summary>
+              <ul className="lession-items">
+                <li><a href="#">Day-1: Lesson 1</a></li>
+                <li><a href="#">Day-2: Lesson 2</a></li>
+                <li><a href="#">Day-3: Lesson 3</a></li>
+                <li><a href="#">Day-4: Lesson 4</a></li>
+                <li><a href="#">Day-5: Assessment</a></li>
+              </ul>
+            </details>
+            <details>
+              <summary>Module 2: JavaScript</summary>
+              <ul className="lession-items">
+                <li><a href="#">Day-1: Lesson 1</a></li>
+                <li><a href="#">Day-2: Lesson 2</a></li>
+                <li><a href="#">Day-3: Lesson 3</a></li>
+                <li><a href="#">Day-4: Lesson 4</a></li>
+                <li><a href="#">Day-5: Assessment</a></li>
+              </ul>
+            </details> 
+            <details>
+              <summary>Module 3: React</summary>
+              <ul className="lession-items">
+                <li><a href="#">Day-1: Lesson 1</a></li>
+                <li><a href="#">Day-2: Lesson 2</a></li>
+                <li><a href="#">Day-3: Lesson 3</a></li>
+                <li><a href="#">Day-4: Lesson 4</a></li>
+                <li><a href="#">Day-5: Assessment</a></li>
+              </ul>
+            </details>
+            <p className="final rounded text-white text-lg">
+                <a href="#">Final Project</a>
+            </p>     
             </nav>
           </div>
         </aside>
         <div className="side-description pt-20">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/RHIWj7hvpM0"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+        <div>
+            <p className="text-left ml-2 text-lg mb-10">
+                React is an open-source JavaScript frontend library for creating
+                user interfaces. It uses component based approach to create
+                complicated, interactive web and mobile user interfaces.
+            </p>
+            <p className="text-left ml-2 text-lg">
+                React is an open-source JavaScript frontend library for creating
+                user interfaces. It uses component based approach to create
+                complicated, interactive web and mobile user interfaces.
+            </p>
             <div>
-              <p className="text-left ml-2 text-lg">
-                React is an open-source JavaScript frontend library for creating
-                user interfaces. It uses component based approach to create
-                complicated, interactive web and mobile user interfaces.
-              </p><br /><br/>
-              <p className="text-left ml-2 text-lg">
-                React is an open-source JavaScript frontend library for creating
-                user interfaces. It uses component based approach to create
-                complicated, interactive web and mobile user interfaces.
-              </p>
-              <button className="bg-gray-300 py-2 px-4 rounded flex ml-2 mt-5">Continue <GoArrowRight className="ml-2 mt-1" /></button>
+              <h1>About the Instructor</h1>
             </div>
+          </div>
+          <div>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/RHIWj7hvpM0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+ 
+              <div className="code-container">
+
+              </div>
+          </div>
         </div>
       </div>
     </section>
