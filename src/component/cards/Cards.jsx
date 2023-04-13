@@ -17,7 +17,7 @@ const Cards = () => {
                     <div className='content'>
                       <h2 className='text-xl font-semibold'>{card.title}</h2>
                       <p>{card.description}</p>
-                      <span className=''><BsArrowRightShort className='text-2xl text-white ml-auto border-2 border-green-500 bg-green-400 rounded-lg w-10' /></span>
+                      <span className=''>Find Out<BsArrowRightShort className='text-2xl text-white ml-auto border-2 border-green-500 bg-green-400 rounded-lg w-10' /></span>
                     </div>
                   </div> 
                 )

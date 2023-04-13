@@ -10,7 +10,7 @@ const Register = () => {
         <div className="header"></div>
         <div className="mt-4">
           <div className="ml-20 w-25 mt-2">
-            <img src={logoimg} alt="" />
+            {/* <img src={logoimg} alt="" /> */}
           </div>
           <h5 className="text-xs">
             Please create a new account here

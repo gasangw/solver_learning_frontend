@@ -1,12 +1,13 @@
 import React from "react";
 import logo from '../component/img/Logo.png';
-import { NavLink } from 'react-router-dom'
+import { NavLink, useNavigate } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
 const NavBar = () => {
+  const navigate = useNavigate()
   return (
     <div>
       <Navbar collapseOnSelect expand="lg" variant="dark" className="nav-cont">
@@ -24,10 +25,10 @@ const NavBar = () => {
             <NavLink to="contact" className="links">Contact Us</NavLink>
           </Nav>
           <Nav>
-            <NavLink to="#deets">
-                <button className="py-2 px-4 text-lg text-white rounded-5 nav-btn-1 mr-5 ml-5">Sign Up</button>
+            <NavLink to="">
+                <button onClick={()=>navigate("/signup")} className="py-2 px-4 text-lg text-white rounded-5 nav-btn-1 mr-5 ml-5">Sign Up</button>
             </NavLink>
-            <NavLink to="#memes">
+            <NavLink to="login">
             <button className="py-2 px-4 text-white text-lg rounded-5 border-2 nav-btn-2">Login</button>
             </NavLink>
           </Nav>

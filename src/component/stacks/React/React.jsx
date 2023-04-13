@@ -1,8 +1,8 @@
 import React from "react";
 import "../stacks.css";
+import "./react.css"
 import { BsArrowLeft } from "react-icons/bs";
 import { GoArrowRight } from 'react-icons/go';
-import logo from "../../img/S.png";
 
 const AboutReact = () => {
   return (
@@ -13,10 +13,6 @@ const AboutReact = () => {
       <p className="font-bold text-xl text-center">Over View Of React</p>
       <div className="sidebar-sec">
         <aside class="flex flex-col w-64 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
-          <a href="#" class="">
-            <img class="w-16 h-6 sm:h-7" src={logo} alt="logo" />
-          </a>
-
           <div class="flex flex-col items-center mt-6 -mx-2">
             <img
               class="object-cover w-24 h-24 mx-2 rounded-full"
@@ -30,92 +26,19 @@ const AboutReact = () => {
               john@example.com
             </p>
           </div>
-
+          <hr class="mt-4"/>
           <div class="flex flex-col justify-between flex-1 mt-6">
             <nav>
-              <a
-                class="flex items-center px-4 py-2 mt-2 text-gray-700 bg-gray-100 rounded-lg dark:bg-gray-800 dark:text-gray-200"
-                href="#"
-              >
-                <svg
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-
-                <span class="mx-4 font-medium">Module 1</span>
-              </a>
-
-              <a
-                class="flex items-center px-4 py-2 mt-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="#"
-              >
-                <svg
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span class="mx-4 font-medium">Module 2</span>
-              </a>
-
-              <a
-                class="flex items-center px-4 py-2 mt-2 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="#"
-              >
-                <svg
-                  class="w-5 h-5"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M19 11H5M19 11C20.1046 11 21 11.8954 21 13V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V13C3 11.8954 3.89543 11 5 11M19 11V9C19 7.89543 18.1046 7 17 7M5 11V9C5 7.89543 5.89543 7 7 7M7 7V5C7 3.89543 7.89543 3 9 3H15C16.1046 3 17 3.89543 17 5V7M7 7H17"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span class="mx-4 font-medium">Module 3</span>
-              </a>
-              <a
-                class="flex items-center px-4 py-2  text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-gray-200 hover:text-gray-700"
-                href="#"
-              >
-                <svg
-                  class="w-9 h-7"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M15 5V7M15 11V13M15 17V19M5 5C3.89543 5 3 5.89543 3 7V10C4.10457 10 5 10.8954 5 12C5 13.1046 4.10457 14 3 14V17C3 18.1046 3.89543 19 5 19H19C20.1046 19 21 18.1046 21 17V14C19.8954 14 19 13.1046 19 12C19 10.8954 19.8954 10 21 10V7C21 5.89543 20.1046 5 19 5H5Z"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-                <span class="mx-4 font-medium">Final Group Assessment</span>
-              </a>
+              <div class="sec-center"> 	
+                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                <label class="for-dropdown" for="dropdown">Module 1: HTML/CSS<i class="uil uil-arrow-down"></i></label>
+                <div class="section-dropdown"> 
+                  <a href="#">Lesson 1: Day 1 <i class="uil uil-arrow-right"></i></a>
+                  <a href="#">Lesson 3: Day 3<i class="uil uil-arrow-right"></i></a>
+                  <a href="#">Lession 4: Day 5<i class="uil uil-arrow-right"></i></a>
+                  <a href="#">Assessment: Day 5<i class="uil uil-arrow-right"></i></a>
+                </div>
+              </div>
             </nav>
           </div>
         </aside>

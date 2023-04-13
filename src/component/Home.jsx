@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles.css";
-import GIZ from './img/GIZ.jpg'
+import GIZ from './img/GIZ.png'
 
 const Home = () => {
   return (

@@ -1,23 +1,16 @@
 import React from 'react'
 import signimage from '../img/lib.png'
-import logoimg from '../img/Logo.png'
+// import logoimg from '../img/Logo.png'
 import './Login.css'
 
 const Login=()=> {
   return (
-   
-
       < div class = "flex ml-52 mb-5 mt-4" >
-      <div class="bg-blue-50 w-96 mr-20">
+      <div class="w-96 mr-20">
         <div class="header">
       
         </div>
         <div class=" mt-4  ">
-
-         
-             <div className="ml-16 w-44 mt-1">
-                                  <img src={logoimg} alt=""></img>
-          </div> 
                <h6 className="text-xs mt-12">
           Please create a new account here
           </h6>
