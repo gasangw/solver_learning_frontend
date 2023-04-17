@@ -1,9 +1,14 @@
 import React from "react";
 import logo from "../component/img/Logo.png";
+import { useInView } from 'react-intersection-observer';
 
 const Footer = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
   return (
-    <div className="relative mt-16 bg-black border-2 text-white">
+    <div  className={inView ? "slide slide__zoom" : "slide"} ref={ref}>
+     <div className="relative mt-16 bg-black border-2 text-white" id="contact">
       <svg
         className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
         preserveAspectRatio="none"
@@ -245,6 +250,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

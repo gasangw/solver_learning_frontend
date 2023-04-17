@@ -1,7 +1,6 @@
 import React from 'react'
 import signimage from '../img/lib.png'
-// import logoimg from '../img/Logo.png'
-import './Login.css'
+import './auth.css'
 
 const Login=()=> {
   return (

@@ -1,0 +1,11 @@
+/* styling for login part */
+.button, input, .btn{
+    width: 80%;
+}
+
+
+/* styling for sign up or register */
+input{
+    width: 80%;
+    height: 40px;
+}

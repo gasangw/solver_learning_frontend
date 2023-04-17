@@ -1,10 +1,16 @@
 import React from "react";
 import "./styles.css";
 import GIZ from './img/GIZ.png'
+import Cards from "./cards/Cards";
+import About from "./About";
+import Footer from "./Footer";
+// import NavBar from "./navBar";
 
 const Home = () => {
   return (
-    <div className="wrapper">
+    <div>
+     {/* <NavBar /> */}
+     <div className="wrapper">
       <div className="wrapper2_holder">
         <div>
           <h1 className="title text-3xl font-bold text-left pb-3">Start your learning Journey<br/>with us</h1>
@@ -27,6 +33,10 @@ const Home = () => {
           <img src={GIZ} alt="student-reading" className="ml-auto stud rounded-full" />
         </div>
       </div>
+    </div>
+      <Cards />
+      <About />
+      <Footer />
     </div>
   );
 };

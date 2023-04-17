@@ -18,15 +18,15 @@ const NavBar = () => {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className=" mx-auto nav-links-all gap-5 text-lg">
-            <NavLink to="/" className="links">Home</NavLink>
-            <NavLink to="about" className="links">Courses</NavLink>
-            <NavLink to="stacks" className="links">Stack</NavLink>
-            <NavLink to="contact" className="links">About Us</NavLink>
-            <NavLink to="contact" className="links">Contact Us</NavLink>
+            <NavLink to="/" className="links ml-4">Home</NavLink>
+            {/* <NavLink to="about" className="links">Courses</NavLink> */}
+            <a href="#stacks" className="move">Stack</a>
+            <a href="#about" className="move">About Us</a>
+            <a href="#contact" className="move">Contact Us</a>
           </Nav>
           <Nav>
-            <NavLink to="">
-                <button onClick={()=>navigate("/signup")} className="py-2 px-4 text-lg text-white rounded-5 nav-btn-1 mr-5 ml-5">Sign Up</button>
+            <NavLink to="/signup">
+                <button className="py-2 px-4 text-lg text-white rounded-5 nav-btn-1 mr-5 ml-5">Sign Up</button>
             </NavLink>
             <NavLink to="login">
             <button className="py-2 px-4 text-white text-lg rounded-5 border-2 nav-btn-2">Login</button>
