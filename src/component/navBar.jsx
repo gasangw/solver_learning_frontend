@@ -1,34 +1,35 @@
 import React from "react";
-import logo from '../component/img/S.png';
-import { NavLink } from 'react-router-dom'
+import logo from '../component/img/Logo.png';
+import { NavLink, useNavigate } from 'react-router-dom'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
 
 const NavBar = () => {
+  const navigate = useNavigate()
   return (
-    <div className="">
-      <Navbar collapseOnSelect expand="lg" bg="light" variant="dark" className="">
+    <div>
+      <Navbar collapseOnSelect expand="lg" variant="dark" className="nav-cont">
       <Container>
         <Navbar.Brand href="#home">
-            <img src={logo} alt="logo" className="h-20" />
+            <img src={logo} alt="logo" className="h-20 ml-6" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto text-black gap-5 text-lg ">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="about">About</NavLink>
-            <NavLink to="stacks">Stacks</NavLink>
-            <NavLink to="contact">Contact</NavLink>
-          </Nav> 
-
+          <Nav className=" mx-auto nav-links-all gap-5 text-lg">
+            <NavLink to="/" className="links ml-4">Home</NavLink>
+            {/* <NavLink to="about" className="links">Courses</NavLink> */}
+            <a href="#stacks" className="move">Stack</a>
+            <a href="#about" className="move">About Us</a>
+            <a href="#contact" className="move">Contact Us</a>
+          </Nav>
           <Nav>
-            <NavLink to="SignUp">
-            <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 ">SignUp</button>
+            <NavLink to="/signup">
+                <button className="py-2 px-4 text-lg text-white rounded-5 nav-btn-1 mr-5 ml-5">Sign Up</button>
             </NavLink>
             <NavLink to="login">
-            <button className="py-1 px-3 text-lg rounded-5 border-2 border-green-500 ">login</button>
+            <button className="py-2 px-4 text-white text-lg rounded-5 border-2 nav-btn-2">Login</button>
             </NavLink>
           </Nav>
         </Navbar.Collapse>

@@ -1,9 +1,14 @@
 import React from "react";
-import logo from "../component/img/dark.png";
+import logo from "../component/img/Logo.png";
+import { useInView } from 'react-intersection-observer';
 
 const Footer = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.2,
+  });
   return (
-    <div className="relative mt-16 bg-black text-white">
+    <div  className={inView ? "slide slide__zoom" : "slide"} ref={ref}>
+     <div className="relative mt-16 bg-black border-2 text-white" id="contact">
       <svg
         className="absolute top-0 w-full h-6 -mt-5 sm:-mt-10 sm:h-16 text-deep-purple-accent-400"
         preserveAspectRatio="none"
@@ -14,26 +19,23 @@ const Footer = () => {
           d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
         />
       </svg>
-      <div className="px-4 pt-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
+      <div className="px-2 pt-12 ml-20 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-8">
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <a
               href="/"
               aria-label="Go home"
               title="Company"
-              className="inline-flex items-center"
+              className="flex"
             >
               <img src={logo} alt="logo" className="h-24" />
-              <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-                Solver Learning
-              </span>
             </a>
             <div className="mt-4 lg:max-w-sm">
-              <p className="text-sm text-deep-purple-50">
+              <p className="text-sm text-deep-purple-50 text-left">
                 With the ability to access educational resources anytime, anywhere, learners have more
                 flexibility and control over their learning experience
               </p>
-              <p className="mt-4 text-sm text-deep-purple-50">
+              <p className="mt-4 text-sm text-deep-purple-50 text-left">
                 E-learning is poised to become even more
                 popular, providing learners with new and exciting ways to
                 enhance their knowledge and expertise.
@@ -215,11 +217,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col justify-between pt-5 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
+        <div className="flex flex-col justify-between pt-4 pb-10 border-t border-deep-purple-accent-200 sm:flex-row">
           <p className="text-sm text-gray-100">
             © Copyright 2023 Solver learning. All rights reserved.
           </p>
-          <div className="flex items-center mt-4 space-x-4 sm:mt-0">
+          <div className="flex items-center mt-1 space-x-4 sm:mt-0">
             <a
               href="/"
               className="transition-colors duration-300 text-deep-purple-100 hover:text-teal-accent-400"
@@ -248,6 +250,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
