@@ -1,5 +1,5 @@
 import './App.css';
-import NavBar from './component/navBar';
+// import NavBar from './component/navBar';
 import Home from './component/Home';
 import About from './component/About';
 import Login from './component/auth/Login';
@@ -14,7 +14,6 @@ import Ui from './component/stacks/UI-UX/Ui';
 function App() {
   return (
     <div className="App">
-      <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/signup' element={<Register />} />
