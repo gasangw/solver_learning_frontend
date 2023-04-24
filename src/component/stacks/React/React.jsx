@@ -1,13 +1,15 @@
 import React from "react";
 import "../stacks.css";
 import { BsTwitter } from 'react-icons/bs';
+import { NavLink } from "react-router-dom";
 import { FiInstagram, FiFacebook } from 'react-icons/fi';
-import { CodesInReact } from "../SyntaxSamples/SampleInReact";
+import NavScroll from "../Nav";
 
 const AboutReact = () => {
   return (
     <section>
-      <p className="font-bold text-xl text-center">Over View Of React</p>
+      <NavScroll />
+      <p className="font-bold text-xl text-center">REACT</p>
       <div className="sidebar-sec">
         <aside class="flex flex-col w-64 h-screen px-4 py-8 overflow-y-auto bg-white border-r rtl:border-r-0 rtl:border-l dark:bg-gray-900 dark:border-gray-700">
           <div class="flex flex-col items-center mt-6 -mx-2">
@@ -38,10 +40,10 @@ const AboutReact = () => {
                 <summary>Module 1: HTML/CSS</summary>
                 <ul className="lession-items">
                   <li>
-                    <a href="#">Day-1: Lesson 1</a>
+                    <NavLink to="/react/lesson1">Day-1: Lesson 1</NavLink>
                   </li>
                   <li>
-                    <a href="#">Day-2: Lesson 2</a>
+                    <NavLink to="/react/lesson2">Day-2: Lesson 2</NavLink>
                   </li>
                   <li>
                     <a href="#">Day-3: Lesson 3</a>

@@ -1,5 +1,5 @@
 import './App.css';
-// import NavBar from './component/navBar';
+import NavBar from './component/navBar';
 import Home from './component/Home';
 import About from './component/About';
 import Login from './component/auth/Login';
@@ -10,6 +10,8 @@ import Django from './component/stacks/Django/Django';
 import Node from './component/stacks/Node/Node';
 import Laravel from './component/stacks/Laravel/Laravel';
 import Ui from './component/stacks/UI-UX/Ui';
+import Lesson2 from './component/Lessons/React/Lesson2';
+import Lesson1 from './component/Lessons/React/Lesson1';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
         <Route path='/ui' element={<Ui />} />
         <Route path='/django' element={<Django />} />
         <Route path='/laravel' element={<Laravel />} />
+        <Route path='/react/lesson1' element={<Lesson1 />} />
+        <Route path='/react/lesson2' element={<Lesson2 />} />
       </Routes>
     </div>
   );
