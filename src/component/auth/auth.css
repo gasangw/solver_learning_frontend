@@ -19,7 +19,7 @@
   background-size: cover;
 }
 
-input, .btn  {
+.auth-cont input, .btn  {
   padding: 0.8rem;
   width: 60%;
 }
@@ -32,10 +32,3 @@ input, .btn  {
   text-decoration: underline;
   color: blue;
 }
-
-
-
-/* styling for sign up or register */
-/* input{
-    width: 60%;
-} */

@@ -52,7 +52,9 @@ const AboutReact = () => {
                     <a href="#">Day-4: Lesson 4</a>
                   </li>
                   <li>
-                    <a href="#">Day-5: Assessment</a>
+                    <NavLink to="/react/lessons/assignment">
+                      Assessment
+                    </NavLink>
                   </li>
                 </ul>
               </details>
