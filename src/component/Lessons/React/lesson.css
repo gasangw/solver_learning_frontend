@@ -68,3 +68,7 @@
   margin-top: 1rem;
   background: linear-gradient(87.42deg, #0077B6 0%, rgba(72, 202, 228, 0.511772) 117.34%, #48CAE4 117.35%);
 }
+
+.form-title {
+  font-size: 2rem;
+}

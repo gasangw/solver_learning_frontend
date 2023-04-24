@@ -6,10 +6,12 @@ import LOGO from '../img/Logo.png';
 import { AiFillHome } from 'react-icons/ai';
 import { HiOutlineLogout } from 'react-icons/hi';
 import { NavLink } from 'react-router-dom';
+import './stacks.css'
+
 
 function NavScroll() {
   return (
-    <Navbar bg="light" expand="lg" className="px-7">
+    <Navbar expand="lg" className="px-7 my-nav">
       <Container fluid>
         <Navbar.Brand href="#">
           <img src={LOGO} alt='logo' className='w-20'/>
