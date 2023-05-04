@@ -4,12 +4,12 @@ import GIZ from './img/GIZ.png'
 import Cards from "./cards/Cards";
 import About from "./About";
 import Footer from "./Footer";
-// import NavBar from "./navBar";
+import NavBar from "./navBar";
 
 const Home = () => {
   return (
     <div>
-     {/* <NavBar /> */}
+     <NavBar />
      <div className="wrapper">
       <div className="wrapper2_holder">
         <div>
