@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./lesson.css"
 import { ImNext } from 'react-icons/im';
 import { BsBookHalf } from 'react-icons/bs';
+import { AiFillCheckCircle } from 'react-icons/ai';
 import { NavLink } from "react-router-dom";
 
 const Lesson1 = () => {
+  const [complete, setComplete] = useState(false)
+  const Completed = () => {
+    setComplete(!complete)
+  }
   return (
     <div className="m-10">
       <h1 className="pl-20 title-lesson">Introduction to HTML & CSS</h1>
@@ -94,16 +99,19 @@ const Lesson1 = () => {
         </aside>
       </div>
       <div className="bottom-buts p-20 flex gap-2 justify-center">
-        <div className=" flex gap-2 text-lg text-white bg-green-800 cursor-pointer justify-center border-2 border-green-600 p-2 rounded-md">
+        <div className=" flex gap-2 text-lg text-white btu-1 cursor-pointer justify-center p-2 rounded-md">
             <BsBookHalf className="text-lg mt-1.5"/>
            <NavLink to="/react">
             <p>View Course</p> 
            </NavLink>
         </div>
-        <div  className=" flex gap-2 bg-orange-900 text-lg text-white justify-center p-2 rounded-md">
-            <button>Mark Complete</button> 
+        <div  className=" flex gap-2 btu-1 text-lg text-white justify-center p-2 rounded-md" onClick={Completed}>
+           { complete ? <button>Mark Complete</button> : <div className="flex gap-2 text-xl">
+              <p>Completed</p>
+              <AiFillCheckCircle className="w-7 h-7 mt-1"/>
+            </div> }
         </div>
-        <div  className=" flex gap-2 cursor-pointer text-lg bg-green-800 text-white justify-center border-2 border-green-600 p-2 rounded-md">
+        <div  className=" flex gap-2 cursor-pointer text-lg btu-1 text-white justify-center p-2 rounded-md">
             <ImNext className="text-lg mt-1.5"/>
            <NavLink to="/react/lesson2">
             <p>Next Lesson</p> 
