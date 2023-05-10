@@ -11,9 +11,9 @@ const Login=()=> {
       <div class="text-center core">
         <img src={Logo} alt='logo' className='logos'/>
         <form>
-          <h6 className="mt-12">
+          <h6 className="mt-12 text-xl">
           Please create a new account here
-          </h6>
+          </h6><br/>
           <div class="mt-2">
             <input
               id="email"
@@ -21,7 +21,7 @@ const Login=()=> {
               class="px-1 border rounded-full border-grey-400"
               name="email"
               placeholder="example@gmail.com"
-            />
+            /><br/><br/>
           </div>
           <div class="mt-2">
             <input
@@ -31,11 +31,14 @@ const Login=()=> {
               name="password"
               placeholder='password'
               required
-            />
+            /><br/>
 
-          </div>
-          <h6 className="text-sm pt-3 ml-48">Don't have an account? <NavLink to="/signup" className="line">sign up</NavLink></h6>
-          <button
+            </div>
+            <div className = "flex " >
+          <h6 className="text-sm pt-3 ml-48 text-xl">Don't have an account? <NavLink to="/signup" className="line">sign up</NavLink></h6>
+          <a className="ml-12 mt-3 text-xl" href='ResetPassword'> ResetPassword</a>
+              </div>
+            <button
             type="submit"
             class = "btn bg-gradient-to-l from-blue-200 to-blue-500 mt-4 py-2.5 px-5 mr-2 mb-2 text-sm font-medium bg-white rounded-full border"
           >
@@ -45,7 +48,7 @@ const Login=()=> {
       </div>
       </div>
       <div class="pic">
-       <img src={signimage} alt="library" />
+       <img src={signimage} alt="library"/>
       </div>
     </div>
       
