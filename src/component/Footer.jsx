@@ -19,7 +19,7 @@ const Footer = () => {
           d="M0 22L120 16.7C240 11 480 1.00001 720 0.700012C960 1.00001 1200 11 1320 16.7L1440 22V54H1320C1200 54 960 54 720 54C480 54 240 54 120 54H0V22Z"
         />
       </svg>
-      <div className="px-2 pt-12 ml-20 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-8">
+      <div className="pt-12 mx-4 lg:ml-20 sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-10 lg:px-8">
         <div className="grid gap-16 row-gap-10 mb-8 lg:grid-cols-6">
           <div className="md:max-w-md lg:col-span-2">
             <a
@@ -28,7 +28,7 @@ const Footer = () => {
               title="Company"
               className="flex"
             >
-              <img src={logo} alt="logo" className="h-24" />
+              <img src={logo} alt="logo" className="lg:h-24 h-7" />
             </a>
             <div className="mt-4 lg:max-w-sm">
               <p className="text-sm text-deep-purple-50 text-left">
@@ -42,7 +42,7 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="grid grid-cols-2 gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
+          <div className="px-2 grid grid-cols-2 gap-2 lg:gap-5 row-gap-8 lg:col-span-4 md:grid-cols-4">
             <div>
               <p className="font-semibold tracking-wide text-teal-accent-400 text-left">
                 About Us

@@ -175,3 +175,32 @@
     50%  {bottom:0px; top: 10px;}
     100% {bottom:0px; top:0px;}
   }
+
+  @media(max-width: 769px){
+    .wrapper2_holder {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 1rem;
+    }
+
+    .parag {
+      text-align: left;
+      line-height: 1.8rem;
+      font-size: 1.2rem;
+    }
+
+    /* media query for about page */
+    .my-wrap {
+      display: flex;
+      gap: 1.5rem;
+      flex-direction: column;
+    }
+
+    .about-heading {
+      font-size: 1.5rem;
+      color: #8cc7e6;
+    }
+  }
