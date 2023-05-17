@@ -46,10 +46,10 @@ const AboutReact = () => {
                     <NavLink to="/react/lesson2">Day-2: Lesson 2</NavLink>
                   </li>
                   <li>
-                    <a href="#">Day-3: Lesson 3</a>
+                    <a href="/react/lesson3">Day-3: Lesson 3</a>
                   </li>
                   <li>
-                    <a href="#">Day-4: Lesson 4</a>
+                    <a href="/react/lesson4">Day-4: Lesson 4</a>
                   </li>
                   <li>
                     <NavLink to="/react/lessons/assignment">

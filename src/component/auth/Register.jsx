@@ -13,7 +13,7 @@ const Register = () => {
           {/* <div>
             <img src={Logo} alt='logo' className='logos mx-auto'/>
           </div> */}
-          <h5 className="text-xs">
+          <h5 className="text-xl">
             Please create a new account here
           </h5>
           <form>
@@ -25,7 +25,7 @@ const Register = () => {
                 name="firstname"
                 value=""
                 placeholder="First Name"
-              />
+              /><br/>
             </div>
             <div className="mt-1 radius-100">
               <input
@@ -35,7 +35,7 @@ const Register = () => {
                 name="lastname"
                 value=""
                 placeholder="Last Name"
-              />
+              /><br/>
             </div>
             <div className="mt-1 radius-100">
               <input
@@ -45,7 +45,7 @@ const Register = () => {
                 name="email"
                 value=""
                 placeholder="Email"
-              />
+              /><br/>
             </div>
             <div className=" mt-1">
               <input
@@ -55,7 +55,7 @@ const Register = () => {
                 name="password"
                 required
                 placeholder="Password"
-              />
+              /><br/> 
             </div>
             <div className=" mt-1">
               <input
@@ -65,9 +65,9 @@ const Register = () => {
                 name="password"
                 required
                 placeholder="Confirm Password"
-              />
+              /><br/>
             </div>
-            <p className="p-2 ml-48">Already have an account?<NavLink to="/login" className="line">Login</NavLink></p>
+            <p className="p-2 ml-48">Already have an account?<NavLink to="/login" className="line ">Login</NavLink></p><br/>
             <button
               type="submit"
               className="btn bg-gradient-to-l from-blue-200 to-blue-500 mt-1 py-2.5 px-5 mr-2 mb-2 text-sm font-medium focus:outline-none bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 dark:bg-gray-800 dark:hover:text-white"

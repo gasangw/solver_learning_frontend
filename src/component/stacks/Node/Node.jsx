@@ -74,7 +74,7 @@ const AboutReact = () => {
                 </ul>
               </details>
               <details>
-                <summary>Module 3: React</summary>
+                <summary>Module 3: Node.js</summary>
                 <ul className="lession-items">
                   <li>
                     <a href="#">Day-1: Lesson 1</a>
@@ -102,21 +102,23 @@ const AboutReact = () => {
         <div className="side-description pt-10 pr-8">
           <div>
           <p className="text-left ml-2 text-lg mb-10">
-              React is an open-source JavaScript frontend library for creating
-              user interfaces. It uses component based approach to create
-              complicated, interactive web and mobile user interfaces.
+             Node.js is a server-side, open-source, cross-platform, 
+             and event-driven JavaScript runtime environment built on 
+              the Chrome V8 engine. It allows developers to use JavaScript on
+              the server-side to build fast, scalable, and efficient web applications.
             </p>
             <p className="text-left ml-2 text-lg">
-              React is an open-source JavaScript frontend library for creating
-              user interfaces. It uses component based approach to create
-              complicated, interactive web and mobile user interfaces.
+              Node.js is also commonly used with popular front-end frameworks, 
+              such as React and Angular, to build full-stack web applications. With Node.js, 
+              developers can use a single programming language (JavaScript) for both the front-end  
+              development process and making it easier to maintain code.
             </p>             
           </div>
           <div className="video-code">
             <iframe
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/RHIWj7hvpM0"
+              src ="https://www.youtube.com/watch?v=fBNz5xF-Kx4&t=2710s"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
