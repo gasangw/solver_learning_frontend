@@ -1,26 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import signimage from '../img/lib.png';
 import Logo from '../img/Logo.png';
 import { NavLink } from 'react-router-dom';
 import './auth.css'
+import { useNavigate } from 'react-router-dom';
 
-const Login=()=> {
+const Login = () => {
+  
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const navigate = useNavigate();
+
+  const handleUsernameChange = (e) => {
+    setUsername(e.target.value);
+  };
+  const handlPasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    // Call API endpoint with email and password
+    const response = await fetch('http://hira.pythonanywhere.com/accounts/login/', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        username,
+        password
+      }),
+
+    })
+    const data = await response.json();
+    if (response.ok) {
+      // Login successful, navigate to dashboard
+      navigate('/Lesson1');
+
+    } else {
+      // Login failed, display error message
+      console.log(data.message);
+    }
+    
+  }
+
+  
+
   return (
       <div class="auth-cont" >
       <div className='form-holder'>
       <div class="text-center core">
         <img src={Logo} alt='logo' className='logos'/>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h6 className="mt-12 text-xl">
           Please create a new account here
           </h6><br/>
           <div class="mt-2">
             <input
-              id="email"
+              id="username"
               type="text"
               class="px-1 border rounded-full border-grey-400"
-              name="email"
-              placeholder="example@gmail.com"
+              name="username"
+                placeholder="username"
+                onChange={handleUsernameChange}
             /><br/><br/>
           </div>
           <div class="mt-2">
@@ -29,7 +73,8 @@ const Login=()=> {
               type="password"
               class="px-1 rounded-full"
               name="password"
-              placeholder='password'
+                placeholder='password'
+                onChange={handlPasswordChange}
               required
             /><br/>
 
